@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://movie-reco-3mtt-575e65ee82ac.herokuapp.com/api';
+const API_BASE_URL = (process.env.REACT_APP_API_URL || 'https://movie-reco-3mtt-575e65ee82ac.herokuapp.com/api').replace(/\/$/, '');
 const TMDB_API_KEY = '2cbfc26c419d1e410165ff41abd1b38f';
 
 // Helper function to get auth token
